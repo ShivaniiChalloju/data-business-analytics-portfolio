@@ -1,0 +1,23 @@
+SQL Analysis – Business Performance Project
+
+This folder contains all SQL queries used to analyze the e-commerce dataset.
+
+The analysis focuses on:
+
+Executive-level KPIs (orders, revenue, profit, customers)
+
+Sales and growth trends over time
+
+Product and category performance
+
+Customer segmentation and behavior analysis
+
+Profitability and discount impact
+
+Regional and operational performance
+
+The queries were written in MySQL and are structured around real business questions to support decision-making.
+
+File included:
+
+business_analysis.sql → Core analysis queries used for this project.
