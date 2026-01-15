@@ -1,5 +1,7 @@
 Power BI Dashboard – E-Commerce Business Performance & Risk Analytics
+=
 Objective
+=
 
 The objective of this Power BI solution was to design an interactive, executive-ready business intelligence dashboard that enables stakeholders 
 to monitor overall performance, analyze customer and market behavior, and identify operational risks related to returns and delivery efficiency.
@@ -10,6 +12,7 @@ Market & customer intelligence
 Operations & return-risk analysis
 
 Data Integration & Modeling
+=
 Connected Power BI directly to the MySQL database (ecommerce_analytics)
 Imported a cleaned, analysis-ready orders table
 Validated data types (dates, numeric measures, categorical fields)
@@ -17,6 +20,7 @@ Created a centralized semantic model for KPI reporting
 Implemented calculated measures using DAX to ensure consistency across all visuals
 
 Core DAX Measures
+=
 Key measures created include:
 Total Revenue
 Total Profit
@@ -32,6 +36,7 @@ All measures were built as dynamic calculations, enabling cross-filtering across
 
 Dashboard Architecture & Visual Design
 Page 1 – Executive Overview
+=
 
 Purpose:
 Provide a high-level snapshot of overall business health and financial performance.
@@ -60,6 +65,7 @@ How does performance change by year?
 This page supports executive-level monitoring and strategic planning.
 
 Page 2 – Market & Customer Insights
+=
 
 Purpose:
 Analyze geographic performance and customer behavior to understand market structure and demand patterns.
@@ -87,6 +93,7 @@ How do customers prefer to pay?
 This page supports market expansion, targeting, and customer strategy decisions.
 
 Page 3 – Operations & Returns Risk Analysis
+=
 
 Purpose:
 Identify operational inefficiencies, return-risk drivers, and areas of profit leakage.
@@ -129,6 +136,7 @@ Use of slicers for scenario exploration
 Focus on decision-support, not just visualization
 
 Business Value Delivered
+=
 Centralized performance tracking across revenue, profit, customers, and operations
 Enabled rapid identification of high-risk categories and regions
 Highlighted delivery efficiency as a potential return driver
@@ -136,6 +144,7 @@ Provided visibility into profit leakage caused by returns
 Delivered a scalable BI solution suitable for executive and operational stakeholders
 
 Skills Demonstrated
+=
 Power BI data modeling
 DAX measure development
 KPI design and validation
