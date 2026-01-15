@@ -1,10 +1,13 @@
 SQL Analysis – E-Commerce Business Performance & Operations Risk
+=
 
 Objective
+=
 SQL was used to explore, validate, and analyze e-commerce transactional data to understand business performance, profitability, customer behavior, and operational risk.
 Each query was written to answer a specific business question and to validate metrics later used in Power BI dashboards.
 
 Database Setup & Validation
+=
 CREATE DATABASE ecommerce_analytics;
 USE ecommerce_analytics;
 SHOW COLUMNS FROM orders;
@@ -18,6 +21,7 @@ Business value:
 •	Ensured the dataset was clean, readable, and reliable before analysis.
 
 Query 1 – Executive KPI Snapshot
+=
 SELECT
 COUNT(DISTINCT order_id) AS total_orders,
 COUNT(DISTINCT customer_id) AS total_customers,
@@ -37,6 +41,7 @@ Used in:
 •	Power BI Executive Overview – KPI cards
 
 Query 2 – Yearly Sales Trend
+=
 SELECT
 order_year,
 COUNT(DISTINCT order_id) AS total_orders,
@@ -54,6 +59,7 @@ Used in:
 •	Power BI Revenue & Profit trend analysis
 
 Query 3 – Monthly Sales Pattern
+=
 SELECT
 order_year,
 order_month,
@@ -71,6 +77,7 @@ Used in:
 •	Power BI Monthly Revenue & Profit trend charts
 
 Query 4 – Category Profitability
+=
 SELECT
 category,
 COUNT(DISTINCT order_id) AS orders,
@@ -89,6 +96,7 @@ Used in:
 •	Power BI Category Revenue & Profit analysis
 
 Query 5 – Discount Impact Analysis
+=
 SELECT
 discount_flag,
 COUNT(DISTINCT order_id) AS orders,
@@ -106,6 +114,7 @@ Used in:
 •	Power BI Discount vs Returns & Profitability visuals
 
 Query 6 – Category Performance Mix
+=
 SELECT
 category,
 SUM(quantity) AS items_sold,
@@ -123,6 +132,7 @@ Used in:
 •	Power BI Category contribution analysis
 
 Query 7 – Top Customers by Value
+=
 SELECT
 customer_id,
 COUNT(DISTINCT order_id) AS total_orders,
@@ -141,6 +151,7 @@ Used for:
 •	Customer segmentation logic in Power BI
 
 Query 8 – Customer Age Segmentation
+=
 SELECT
 age_group,
 COUNT(DISTINCT customer_id) AS customers,
@@ -158,6 +169,7 @@ Used in:
 •	Power BI Market & Customer Insights page
 
 Query 9 – Returns Impact
+=
 SELECT
 returned,
 COUNT(*) AS orders,
@@ -174,6 +186,7 @@ Used in:
 •	Power BI Operations & Risk page – Profit impact analysis
 
 Query 10 – Delivery Performance
+=
 SELECT
 delivery_time_days,
 COUNT(order_id) AS orders,
@@ -191,6 +204,7 @@ Used in:
 •	Power BI Return Rate vs Delivery Time analysis
 
 Query 11 – Regional Business Performance
+=
 SELECT
 region,
 COUNT(DISTINCT order_id) AS orders,
@@ -210,6 +224,7 @@ Used in:
 
 
 Key SQL Outcomes:
+=
 •	Built executive KPI logic
 •	Identified category and regional drivers
 •	Quantified discount and return risk
