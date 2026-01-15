@@ -1,5 +1,6 @@
 
-📊 E-Commerce Business Performance & Operations Risk Analysis
+📊 E-Commerce Business Performance & Operations Risk Analysi
+=
 🔍 Project Overview
 
 This project delivers an end-to-end business analytics solution analyzing e-commerce transactional data to evaluate business performance, customer behavior, and operational return risk.
