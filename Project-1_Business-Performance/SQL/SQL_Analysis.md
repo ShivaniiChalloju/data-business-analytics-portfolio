@@ -9,9 +9,13 @@ Each query was written to answer a specific business question and to validate me
 Database Setup & Validation
 =
 CREATE DATABASE ecommerce_analytics;
+
 USE ecommerce_analytics;
+
 SHOW COLUMNS FROM orders;
+
 ALTER TABLE orders 
+
 CHANGE `ï»¿order_id` order_id TEXT;
 Purpose:
 •	Created analytics database
